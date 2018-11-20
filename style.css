@@ -33,30 +33,27 @@
 }
 .navButton{
   background-color: #a6a6a6;
+  position: absolute;
   width: 9vw;
   height: 7vh;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
 #homeNav {
-  position: relative;
-  bottom: -1vh;
-  right: 0vw;
+  bottom: 0vh;
+  left: 0vw;
 }
 #productsNav {
-  position: relative;
-  bottom: 6vh;
-  right: -9vw;
+  bottom: 0vh;
+  left: 9vw;
 }
 #aboutNav {
-  position: relative;
-  bottom: 13vh;
-  right: -18vw;
+  bottom: 0vh;
+  left: 18vw;
 }
 #contactNav {
-  position: relative;
-  bottom: 20vh;
-  right: -27vw;
+  bottom: 0vh;
+  left: 27vw;
 }
 #mainStuff {
   position: relative;
@@ -85,6 +82,7 @@
   background-color: #808080;
   width: 24vw;
   height: 30vh;
+  align-content: center;
 }
 #imgDiv1 {
   bottom: -1vh;
@@ -97,6 +95,15 @@
 #imgDiv3 {
   bottom: 59vh;
   left: 49.5vw;
+}
+.imgCl {
+  right: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  max-width: 24vw;
+  max-height: 30vh;
+  height: 100%;
 }
 #voteDiv {
   position: relative;
