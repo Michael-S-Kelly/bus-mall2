@@ -80,7 +80,7 @@ var products = [];
 function Product(name, catPic) {
   this.name = name;
   this.catPic = catPic;
-  this.views = 0;
+  this.views = [];
   this.votes = [];
   // for (var i = 0; i < this.length; i++) {
   //   this.votes[i] = 0;
@@ -160,11 +160,16 @@ function clearVotes () {
   for (var k = 0; k < products.length; k++) {
     products[k].votes = 0;
   }
-
+  clearViews();
+}
+function clearViews () {
+  for (var i = 0; i < products.length; i++) {
+    products[i].votes = 0;
+  }
+  randImg();
 }
 
 clearVotes();
-randImg();
 
 function results() {
   var resultsEl = document.getElementById('results');
@@ -187,7 +192,7 @@ function results() {
       votes.push(products[k].votes);
     }
     var resultsListEl = document.createElement('li');
-    resultsListEl.textContent = products[i].votes + ' votes for the ' + products[i].name;
+    resultsListEl.textContent = products[i].votes + ' votes for the ' + products[i].name + ' and ' + products[i].views + ' views.';
     resultsEl.appendChild(resultsUlEl);
     resultsUlEl.appendChild(resultsListEl);
   }
