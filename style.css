@@ -121,13 +121,13 @@
   bottom: 64vh;
   left: 24vw;
 }
-#message {
-  background-color: #808080;
-  position: relative;
-  width: 73vw;
-  height: 21vh;
-  bottom: -1vh;
-  left: 0.5vw;
+canvas {
+  background-color: #bfbfbf;
+  position: absolute;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  bottom: 0vh;
 }
 #footerStuff {
   position: relative;
